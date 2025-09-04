@@ -64,6 +64,18 @@ Platforms and publishers often focus on the most popular books, which can leave 
 
 ---
 
+## Screenshots
+### Ratings Distribution
+![Ratings Distribution](ratings_distribution.png)
+
+### Hidden Gem Books
+![Hidden Gems Books](hidden_gems_books.png)
+
+### Hidden Gem Authors
+![Hidden Gems Authors](hidden_gems_authors.png)
+
+---
+
 ## How to Run
 1. Clone the repository.  
 2. Install dependencies:  
