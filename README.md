@@ -56,10 +56,10 @@ Platforms and publishers often focus on the most popular books, which can leave 
 ![Ratings Distribution](ratings_distribution.png)
 
 **Hidden Gem Sci-Fi Books (Scatterplot)**  
-![Hidden Gem Books](hidden_gems_book.png)
+![Hidden Gem Books](hidden_gem_book.png)
 
 **Top Hidden Gem Authors (Bar Chart)**  
-![Hidden Gem Authors](hidden_gems_author.png)
+![Hidden Gem Authors](hidden_gem_author.png)
 
 ## How to Run
 1. Clone the repository.  
