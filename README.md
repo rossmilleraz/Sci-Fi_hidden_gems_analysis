@@ -10,37 +10,36 @@ Platforms and publishers often focus on the most popular books, which can leave 
 
 ## Methodology
 ### Data Loading & Cleaning
-- Loaded books, ratings, and tag data.  
+- Loaded `books.csv`, `ratings.csv`, `book_tags.csv`, and `tags.csv`.  
 - Removed duplicates, standardized column names, and handled missing publication years.  
 
 ### Filter Sci-Fi Books
-- Selected books tagged as *science-fiction* using the Goodbooks-10k tags.  
+- Used tag data to filter only books labeled as *science-fiction*.  
 
 ### Hidden Gems Analysis
-- **Books:** Identified books with high average ratings but low number of ratings.  
-- **Authors:** Found authors with consistently high-rated works but relatively low total ratings.  
+- **Books:** Flagged books with high average ratings but relatively few total ratings.  
+- **Authors:** Identified authors who consistently write strong books but haven’t reached a wide audience.  
 
 ### Visualization
-- Ratings distribution for context: all books vs. sci-fi books.  
-- Scatterplots highlighting hidden gem books and authors.  
-- Annotated top hidden gems for easy identification.  
+- Ratings distribution: All books vs. sci-fi books.  
+- Scatterplot: Sci-fi books mapped by number of ratings vs. average rating, highlighting hidden gems.  
+- Bar chart: Top hidden gem authors with underrated works.  
 
 ## Key Findings
-- Hidden gems exist across the dataset: high-quality books that are not widely read.  
-- Examples include books with >4.3 average rating but <500 ratings.  
-- Authors with consistently high-rated but low-popularity works represent opportunities to diversify recommendations.  
-- These insights can help platforms highlight quality content that may otherwise go unnoticed.  
+- Hidden gems exist across the dataset: high-quality books that aren’t widely read.  
+- Example cutoff: books with an average rating > **4.3** but fewer than **500 ratings**.  
+- Several authors show consistent quality but remain under the radar—opportunities for promotion and discovery.  
 
 ## Business Recommendations
-- **Promote Hidden Gems:** Feature these books and authors in recommendation engines, curated lists, or newsletters.  
-- **Spotlight Underrated Authors:** Highlight authors with strong but under-recognized works to boost engagement.  
-- **Marketing Opportunities:** Reissue older high-quality books or create themed collections featuring hidden gems.  
+- **Promote Hidden Gems:** Include these books in curated lists, newsletters, or recommendation engines.  
+- **Spotlight Underrated Authors:** Feature authors with strong but under-read works.  
+- **Marketing Opportunities:** Reissue older gems or create collections (e.g., “Forgotten Sci-Fi Classics”).  
 
 ## Next Steps
-- Explore sub-genres (cyberpunk, dystopian, space opera) for hidden gems.  
-- Develop an interactive dashboard for users to filter and discover hidden gems dynamically.  
+- Explore sci-fi sub-genres (cyberpunk, dystopian, space opera) to find niche hidden gems.  
+- Save results as CSVs or build an interactive dashboard for easier discovery.  
 - Refine author-level metrics to handle multi-author books individually.  
-- Analyze book descriptions or reviews to uncover additional trends or quality signals.  
+- Extend analysis to include reviews or descriptions for deeper insights.  
 
 ## Dataset
 - **Source:** [Goodbooks-10k Dataset](https://github.com/zygmuntz/goodbooks-10k)  
@@ -50,20 +49,23 @@ Platforms and publishers often focus on the most popular books, which can leave 
 - **Python** – Data analysis and visualization  
 - **Pandas** – Data cleaning and manipulation  
 - **Matplotlib / Seaborn** – Data visualization  
+- **Logging** – Status and progress reporting  
 
 ## Screenshots
-### Ratings Distribution
+**Ratings Distribution (All vs. Sci-Fi)**  
 ![Ratings Distribution](ratings_distribution.png)
 
-### Hidden Gem Books
-![Hidden Gems Books](hidden_gems_books.png)
+**Hidden Gem Sci-Fi Books (Scatterplot)**  
+![Hidden Gem Books](hidden_gems_book.png)
 
-### Hidden Gem Authors
-![Hidden Gems Authors](hidden_gems_authors.png)
-
+**Top Hidden Gem Authors (Bar Chart)**  
+![Hidden Gem Authors](hidden_gems_author.png)
 
 ## How to Run
 1. Clone the repository.  
 2. Install dependencies:  
    ```bash
    pip install pandas matplotlib seaborn
+Place the dataset CSVs in the same directory as the script.
+
+
